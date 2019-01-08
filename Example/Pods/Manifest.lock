@@ -1,0 +1,16 @@
+PODS:
+  - NJGBlinkLabel (0.1.0)
+
+DEPENDENCIES:
+  - NJGBlinkLabel (from `../`)
+
+EXTERNAL SOURCES:
+  NJGBlinkLabel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NJGBlinkLabel: 7eeb4d21fbe98b7c65abd2bbfa7490bf3883095b
+
+PODFILE CHECKSUM: 7b93c53ce6b3d2e615e29746721f1a5cca11257f
+
+COCOAPODS: 1.5.3

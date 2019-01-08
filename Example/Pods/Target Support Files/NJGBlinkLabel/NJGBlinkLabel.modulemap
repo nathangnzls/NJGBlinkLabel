@@ -1,0 +1,6 @@
+framework module NJGBlinkLabel {
+  umbrella header "NJGBlinkLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

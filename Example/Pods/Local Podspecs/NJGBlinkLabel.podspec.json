@@ -1,0 +1,22 @@
+{
+  "name": "NJGBlinkLabel",
+  "version": "0.1.0",
+  "summary": "A short description of NJGBlinkLabel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nathanielgonzalesj@gmail.com/NJGBlinkLabel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nathanielgonzalesj@gmail.com": "nathanielgonzalesj@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nathanielgonzalesj@gmail.com/NJGBlinkLabel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NJGBlinkLabel/Classes/**/*"
+}

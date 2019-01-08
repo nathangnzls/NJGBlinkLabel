@@ -1,0 +1,6 @@
+framework module Pods_NJGBlinkLabel_Tests {
+  umbrella header "Pods-NJGBlinkLabel_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
