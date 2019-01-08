@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NJGBlinkLabel_Example' do
+  pod 'NJGBlinkLabel', :path => '../'
+
+  target 'NJGBlinkLabel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
