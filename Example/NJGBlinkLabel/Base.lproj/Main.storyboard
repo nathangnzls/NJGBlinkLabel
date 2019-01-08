@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +20,44 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cz7-9d-wMd" customClass="NJGBlinkLabel" customModule="NJGBlinkLabel">
+                                <rect key="frame" x="15" y="134" width="345" height="107.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXB-Fp-TOY">
+                                <rect key="frame" x="15" y="450" width="345" height="30"/>
+                                <state key="normal" title="Blink Label"/>
+                                <connections>
+                                    <action selector="blink:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nCg-Fk-N2P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tD-Cb-Kak">
+                                <rect key="frame" x="15" y="482" width="345" height="30"/>
+                                <state key="normal" title="Stop Blink"/>
+                                <connections>
+                                    <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tig-XE-Gym"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6tD-Cb-Kak" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="33L-gs-toF"/>
+                            <constraint firstAttribute="trailing" secondItem="6tD-Cb-Kak" secondAttribute="trailing" constant="15" id="4q7-Rh-SB9"/>
+                            <constraint firstItem="6tD-Cb-Kak" firstAttribute="top" secondItem="WXB-Fp-TOY" secondAttribute="bottom" constant="2" id="Gfn-QB-P4b"/>
+                            <constraint firstItem="WXB-Fp-TOY" firstAttribute="top" secondItem="cz7-9d-wMd" secondAttribute="bottom" constant="208.5" id="JR6-EX-6tr"/>
+                            <constraint firstAttribute="trailing" secondItem="WXB-Fp-TOY" secondAttribute="trailing" constant="15" id="QTo-3k-9Yy"/>
+                            <constraint firstItem="cz7-9d-wMd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="114" id="TTU-zD-rRL"/>
+                            <constraint firstAttribute="trailing" secondItem="cz7-9d-wMd" secondAttribute="trailing" constant="15" id="XPW-Oj-jDy"/>
+                            <constraint firstItem="WXB-Fp-TOY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="gY4-eL-MVx"/>
+                            <constraint firstItem="cz7-9d-wMd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="xtl-fg-lV5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="cz7-9d-wMd" id="zOJ-u0-ee3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
